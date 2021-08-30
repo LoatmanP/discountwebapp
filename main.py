@@ -7,6 +7,22 @@ from sklearn.metrics import accuracy_score
 import plotly.express as px
 
 st.set_page_config(layout="centered")
+hide_streamlit_style = """
+<style>
+.css-hi6a2p {padding-top: 0rem;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 class ExponentialClassifier(object):
     def __init__(self, discountRate=-5, rho=.01):
