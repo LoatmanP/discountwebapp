@@ -479,7 +479,7 @@ if submitted1:
     # print(len(accuracy_list))
             
     st.title("{} Discount Rate: {:.4f} ".format(option, np.exp(Average(disc_list))))
-    st.subheader("According to your intertemporal preferences, cash loses {}% of its value every additional day into the future".format(np.exp(Average(disc_list))*100))
+    st.subheader("According to your intertemporal preferences, cash loses {:.4f}% of its value every additional day into the future".format(np.exp(Average(disc_list))*100))
 
     other_title = "{} Discounted Value of $100".format(option)
     colors = ['rgb(67,67,67)', 'rgb(115,115,115)', 'rgb(49,130,189)', 'rgb(189,189,189)']
