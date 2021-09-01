@@ -25,11 +25,11 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
- hide_footer_style = """
+hide_footer_style = """
     <style>
     .reportview-container .main footer {visibility: hidden;}    
     """
-    st.markdown(hide_footer_style, unsafe_allow_html=True)
+st.markdown(hide_footer_style, unsafe_allow_html=True)
 
 class ExponentialClassifier(object):
     def __init__(self, discountRate=-5, rho=.01):
