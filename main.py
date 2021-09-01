@@ -10,6 +10,7 @@ st.set_page_config(layout="centered")
 hide_streamlit_style = """
 <style>
 .css-hi6a2p {padding-top: 0rem;}
+.css-hi6a2p {padding-bottom: 0rem;}
 </style>
 
 """
